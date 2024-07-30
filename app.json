@@ -2,6 +2,7 @@
   "expo": {
     "name": "quicknotes",
     "slug": "quicknotes",
+    "scheme": "quicknotes",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,10 +19,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.harshdurgude.quicknotes"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "6384e1bc-4d43-49a0-a6c8-23f60e917c53"
+      }
     }
   }
 }
